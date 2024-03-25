@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>_azureml_examples</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+      <!-- Do not include the actual .NET projects at this level -->
+    <Compile Remove="sdk\dotnet\**" />
+    <EmbeddedResource Remove="sdk\dotnet\**" />
+    <None Remove="sdk\dotnet\**" />
+  </ItemGroup>
+
+</Project>
